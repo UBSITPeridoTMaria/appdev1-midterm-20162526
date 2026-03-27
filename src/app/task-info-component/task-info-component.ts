@@ -10,7 +10,7 @@ export class TaskInfoComponent {
   taskmodel: TaskModel[] = [
     {
       id: 1,
-      title: "project report due",
+      title: "Finish project report",
       description: "Complete and submit the final report",
       duedate: "2026-04-01",
       status: "In Progress",
@@ -18,7 +18,7 @@ export class TaskInfoComponent {
     },
     {
       id: 2,
-      title: "Go to the Market",
+      title: "Buy groceries",
       description: "Milk, eggs, bread, and fruits",
       duedate: "2026-03-28",
       status: "Pending",
@@ -26,7 +26,7 @@ export class TaskInfoComponent {
     },
     {
       id: 3,
-      title: "Workout",
+      title: "Morning workout",
       description: "30 minutes cardio and strength training",
       duedate: "2026-03-27",
       status: "Completed",
@@ -61,5 +61,13 @@ export class TaskInfoComponent {
   updateTaskModel(updated: TaskModel): void {
     const idx = this.taskmodel.findIndex(t => t.id === updated.id);
     if (idx !== 1) this.taskmodel[idx] = {...updated};
+  }
+
+  addTask(newTask: TaskModel): void {
+    const exists = this.taskmodel.some(t => t.id === newTask.id);
+    if (exists) {
+      newTask.id = this.taskmodel.length ? Math.max(...this.taskmodel.map(t => t.id)) + 1 : 1;
+    }
+    this.taskmodel.push(newTask);
   }
 }
