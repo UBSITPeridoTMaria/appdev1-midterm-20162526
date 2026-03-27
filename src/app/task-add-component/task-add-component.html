@@ -1,1 +1,50 @@
-<p>task-add-component works!</p>
+<div class="task-details">
+    <h2>Add New Task</h2>
+  
+    <div class="form-group">
+      <label>Title</label>
+      <input [(ngModel)]="taskmodel.title" placeholder="Enter task title">
+    </div>
+  
+    <div class="form-group">
+      <label>Description</label>
+      <textarea [(ngModel)]="taskmodel.description" placeholder="Enter task description"></textarea>
+    </div>
+  
+    <div class="form-grid">
+      <div class="form-group">
+        <label>Due Date</label>
+        <input type="date" [(ngModel)]="taskmodel.duedate">
+      </div>
+  
+      <div class="form-group">
+        <label>Status</label>
+        <select [(ngModel)]="taskmodel.status">
+          <option value="Pending">Pending</option>
+          <option value="In Progress">In Progress</option>
+          <option value="Completed">Completed</option>
+        </select>
+      </div>
+    </div>
+  
+    <div class="form-grid">
+      <div class="form-group">
+        <label>Priority Level</label>
+        <select [(ngModel)]="taskmodel.priorityLevel">
+          <option value="Low">Low</option>
+          <option value="Medium">Medium</option>
+          <option value="High">High</option>
+        </select>
+      </div>
+  
+      <div class="form-group">
+        <label>ID</label>
+        <input type="number" [(ngModel)]="taskmodel.id" placeholder="Unique task ID">
+      </div>
+    </div>
+  
+    <div class="actions">
+      <button class="btn-save" (click)="addTask()">Add Task</button>
+      <button class="btn-cancel" (click)="cancel()">Cancel</button>
+    </div>
+  </div>
