@@ -8,46 +8,48 @@ import { TaskModel } from '../task.model';
 export class TaskInfoComponent {
 
   taskmodel: TaskModel[] = [
-    {
-      id: 1,
-      title: "Finish project report",
-      description: "Complete and submit the final report",
-      duedate: "2026-04-01",
-      status: "In Progress",
-      priorityLevel: "High"
-    },
-    {
-      id: 2,
-      title: "Buy groceries",
-      description: "Milk, eggs, bread, and fruits",
-      duedate: "2026-03-28",
-      status: "Pending",
-      priorityLevel: "Medium"
-    },
-    {
-      id: 3,
-      title: "Morning workout",
-      description: "30 minutes cardio and strength training",
-      duedate: "2026-03-27",
-      status: "Completed",
-      priorityLevel: "Low"
-    },
-    {
-      id: 4,
-      title: "Team meeting",
-      description: "Sprint planning with the development team",
-      duedate: "2026-03-29",
-      status: "Pending",
-      priorityLevel: "High"
-    },
-    {
-      id: 5,
-      title: "Read documentation",
-      description: "Review Angular best practices",
-      duedate: "2026-03-30",
-      status: "In Progress",
-      priorityLevel: "Medium"
-    }
+    
+      {
+        id: 1,
+        title: "Prepare presentation slides",
+        description: "Create slides for Monday's client meeting",
+        duedate: "2026-03-31",
+        status: "In Progress",
+        priorityLevel: "High"
+      },
+      {
+        id: 2,
+        title: "Pay utility bills",
+        description: "Electricity and internet bills",
+        duedate: "2026-03-28",
+        status: "Pending",
+        priorityLevel: "High"
+      },
+      {
+        id: 3,
+        title: "Evening jog",
+        description: "Run 5km around the park",
+        duedate: "2026-03-27",
+        status: "Completed",
+        priorityLevel: "Low"
+      },
+      {
+        id: 4,
+        title: "Code review",
+        description: "Review pull requests from team members",
+        duedate: "2026-03-29",
+        status: "Pending",
+        priorityLevel: "Medium"
+      },
+      {
+        id: 5,
+        title: "Watch tutorial",
+        description: "Learn advanced Angular routing",
+        duedate: "2026-03-30",
+        status: "In Progress",
+        priorityLevel: "Medium"
+      }
+    
   ];
 
   getTasks(): TaskModel[]{
