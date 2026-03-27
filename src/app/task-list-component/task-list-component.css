@@ -1,0 +1,99 @@
+.container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  h2 {
+    color: #e0f7fa;
+    margin-bottom: 15px;
+  }
+  
+  table {
+    width: 90%;
+    border-collapse: collapse;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    color: #e0f7fa;
+    overflow: hidden;
+  }
+  
+  td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid rgba(0, 255, 255, 0.2);
+  }
+  
+  tr:hover {
+    background: rgba(0, 255, 255, 0.1);
+  }
+  
+  .btn-view {
+    padding: 6px 12px;
+    background: rgba(0, 255, 255, 0.2);
+    color: #e0f7fa;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  .btn-view:hover {
+    background: rgba(0, 255, 255, 0.4);
+  }
+  
+  .taskdetail-container:has(app-task-detail) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 50, 60, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  app-task-detail {
+    display: block;
+    background: #e0f7fa;
+  
+    width: 650px !important;
+    max-width: 90vw;
+  
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+  
+    max-height: 85vh;
+    overflow-y: auto;
+  }
+  .taskedit-container:has(app-task-edit) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 50, 60, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  app-task-edit {
+    display: block;
+    background: #e0f7fa;
+  
+    width: 650px !important;
+    max-width: 90vw;
+  
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+  
+    max-height: 85vh;
+    overflow-y: auto;
+  }

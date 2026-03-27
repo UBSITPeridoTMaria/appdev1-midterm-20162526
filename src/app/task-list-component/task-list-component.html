@@ -1,0 +1,26 @@
+<h2>Tasks List</h2>
+
+<table>
+    <tbody>
+        @for (t of taskmodel; track t.id) {
+            <tr>
+               <td>{{ t.id }}</td>
+               <td>{{ t.title }}</td> 
+               <td>{{ t.description }}</td> 
+               <td>
+                <a [routerLink]="['/t-list', t.id, 't-detail']" class="btn-view">View</a>
+               </td>
+               <td>
+                <a [routerLink]="['/t-list', t.id, 't-edit']" class="btn-view">Edit</a>
+               </td> 
+            </tr>
+        }
+    </tbody>
+</table>
+
+<div class="taskdetail-container">
+    <router-outlet></router-outlet>
+</div>
+<div class="taskedit-container">
+    <router-outlet></router-outlet>
+</div>

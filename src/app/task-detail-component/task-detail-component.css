@@ -1,0 +1,114 @@
+.wrapper {
+    padding: 40px;
+    margin-top: 70px;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f0f0f0;
+    min-height: 100vh;
+    align-items: center;
+    }
+    
+    .header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    align-items: center;
+    }
+    
+    h2 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #1a1a1a;
+    
+    }
+    
+    .form-card {
+    background: #fff;
+    border-radius: 14px;
+    padding: 30px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    max-width: 600px;
+   
+    }
+    
+    .form-group {
+    margin-bottom: 18px;
+   
+    }
+    
+    .form-group label {
+    display: block;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: #999;
+    margin-bottom: 6px;
+    }
+    
+    .form-group input,
+    .form-group textarea {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #333;
+    outline: none;
+    transition: border 0.2s;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+    }
+    
+    .form-group textarea {
+    height: 80px;
+    resize: none;
+    }
+    
+    .form-group input:focus,
+    .form-group textarea:focus {
+    border-color: #1e1e1e;
+    }
+    
+    .form-group input[readonly] {
+    background-color: #f5f5f5;
+    color: #999;
+    cursor: not-allowed;
+    }
+    
+    .btn-row {
+    display: flex;
+    gap: 12px;
+    margin-top: 24px;
+    }
+    
+    .save-btn {
+    background-color: #1e1e1e;
+    color: #fff;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 13px;
+    transition: all 0.2s;
+    }
+    
+    .save-btn:hover {
+    background-color: #3a3a3a;
+    }
+    
+    .back-btn {
+    background-color: transparent;
+    color: #1e1e1e;
+    border: 1px solid #1e1e1e;
+    padding: 10px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 13px;
+    transition: all 0.2s;
+    }
+    
+    .back-btn:hover {
+    background-color: #1e1e1e;
+    color: #fff;
+    }

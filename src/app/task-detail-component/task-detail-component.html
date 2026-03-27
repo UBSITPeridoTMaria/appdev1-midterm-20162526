@@ -1,0 +1,41 @@
+<div class="task-details" *ngIf="taskmodel">
+    <h2>Task Details</h2>
+  
+    <div class="form-group">
+      <label>Title</label>
+      <p class="readonly">{{ taskmodel.title }}</p>
+    </div>
+  
+    <div class="form-group">
+      <label>Description</label>
+      <p class="readonly multiline">{{ taskmodel.description }}</p>
+    </div>
+  
+    <div class="form-grid">
+      <div class="form-group">
+        <label>Due Date</label>
+        <p class="readonly">{{ taskmodel.duedate | date:'mediumDate' }}</p>
+      </div>
+  
+      <div class="form-group">
+        <label>Status</label>
+        <p class="readonly">{{ taskmodel.status }}</p>
+      </div>
+    </div>
+  
+    <div class="form-grid">
+      <div class="form-group">
+        <label>Priority Level</label>
+        <p class="readonly">{{ taskmodel.priorityLevel }}</p>
+      </div>
+  
+      <div class="form-group">
+        <label>ID</label>
+        <p class="readonly">{{ taskmodel.id }}</p>
+      </div>
+    </div>
+  
+    <div class="actions">
+      <button class="btn-cancel" (click)="goBack()">Back</button>
+    </div>
+  </div>

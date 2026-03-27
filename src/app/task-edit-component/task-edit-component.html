@@ -1,0 +1,50 @@
+<div class="task-details" *ngIf="taskmodel">
+    <h2>Task Details</h2>
+  
+    <div class="form-group">
+      <label>Title</label>
+      <input [(ngModel)]="taskmodel.title">
+    </div>
+  
+    <div class="form-group">
+      <label>Description</label>
+      <textarea [(ngModel)]="taskmodel.description"></textarea>
+    </div>
+  
+    <div class="form-grid">
+      <div class="form-group">
+        <label>Due Date</label>
+        <input type="date" [(ngModel)]="taskmodel.duedate">
+      </div>
+  
+      <div class="form-group">
+        <label>Status</label>
+        <select [(ngModel)]="taskmodel.status">
+          <option value="Pending">Pending</option>
+          <option value="In Progress">In Progress</option>
+          <option value="Completed">Completed</option>
+        </select>
+      </div>
+    </div>
+  
+    <div class="form-grid">
+      <div class="form-group">
+        <label>Priority Level</label>
+        <select [(ngModel)]="taskmodel.priorityLevel">
+          <option value="Low">Low</option>
+          <option value="Medium">Medium</option>
+          <option value="High">High</option>
+        </select>
+      </div>
+  
+      <div class="form-group">
+        <label>ID</label>
+        <input [(ngModel)]="taskmodel.id" disabled>
+      </div>
+    </div>
+  
+    <div class="actions">
+      <button class="btn-save" (click)="saveTask()">Save</button>
+      <button class="btn-cancel" (click)="goBack()">Cancel</button>
+    </div>
+  </div>
